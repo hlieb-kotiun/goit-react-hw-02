@@ -1,4 +1,4 @@
-const Option = ({ updateFeedback, totalFeedback, handleReset }) => {
+const Options = ({ updateFeedback, totalFeedback, handleReset }) => {
   return (
     <div>
       <button
@@ -27,4 +27,4 @@ const Option = ({ updateFeedback, totalFeedback, handleReset }) => {
   );
 };
 
-export default Option;
+export default Options;

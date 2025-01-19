@@ -1,4 +1,4 @@
-const Discriptin = () => {
+const Description = () => {
   return (
     <div>
       <h1>Sip Happens Café</h1>
@@ -10,4 +10,4 @@ const Discriptin = () => {
   );
 };
 
-export default Discriptin;
+export default Description;

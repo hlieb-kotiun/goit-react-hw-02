@@ -1,6 +1,6 @@
-import Discriptin from "../Discriptin/Discription";
+import Description from "../Description/Discription";
 import Feedback from "../Feedback/Feedback";
-import Option from "../Option/Optin";
+import Options from "../Options/Options";
 import Notification from "../Notification/Notification";
 import { useState, useEffect } from "react";
 
@@ -14,7 +14,7 @@ function App() {
   const [feedback, setFeedback] = useState(initialFeedback);
 
   const updateFeedback = (feedbackType) => {
-    setFeedback({
+    return setFeedback({
       ...feedback,
       [feedbackType]: feedback[feedbackType] + 1,
     });
@@ -22,7 +22,6 @@ function App() {
 
   const handleReset = () => {
     setFeedback({
-      ...feedback,
       good: 0,
       neutral: 0,
       bad: 0,
@@ -37,8 +36,8 @@ function App() {
 
   return (
     <div>
-      <Discriptin />
-      <Option
+      <Description />
+      <Options
         feedback={feedback}
         updateFeedback={updateFeedback}
         totalFeedback={totalFeedback}
